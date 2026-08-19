@@ -190,6 +190,45 @@ footer p{
     border-radius:18px;
     padding:25px 18px;
 }
+    /* SPONSORS ANIMADOS */
+
+.sponsors-marquee {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.sponsors-track {
+    display: flex;
+    width: max-content;
+    gap: 18px;
+    animation: sponsorsMove 30s linear infinite;
+}
+
+.sponsor-card {
+    width: 190px;
+    min-height: 150px;
+    background: rgba(255,255,255,.95);
+    border-radius: 18px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,.35);
+    flex-shrink: 0;
+}
+
+@keyframes sponsorsMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+    }
 </style>
 </head>
 
